@@ -1,8 +1,8 @@
 <PowerSelect
   @searchEnabled={{true}}
-  @search={{this.searchRepo}}
+  @search={{fn this.searchRepo}}
   @selected={{this.selected}}
-  @onChange={{fn (mut this.selected)}} as |repo|>
+  @onChange={{fn this.setSelected}} as |repo|>
   {{repo.full_name}}
 </PowerSelect>
 (It might fail if the API limit is exceeded)

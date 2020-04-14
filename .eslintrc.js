@@ -11,7 +11,8 @@ module.exports = {
     }
   },
   plugins: [
-    'ember'
+    'ember',
+    'glimmer'
   ],
   extends: [
     'eslint:recommended',
